@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+<link rel="stylesheet" type="text/css" href="css/bd.css"/>	
+<!--<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+/*		border: 1px solid black;*/
+	}
+
+	header{
+		height: 130px;
+		border: 1px solid black;
+		
+	}
+	#header_top{
+		/*min-width: 750px;*/
+		height: 30px;
+		font-size: 12px;		
+	}
+	#header_nav{
+		width: 450px;
+		height: 30px;
+		line-height: 30px;
+		border: 1px solid black;
+		float: right;
+	}
+	#header_nav a{
+		font-weight: 600;
+		color: black;
+		border: 1px solid black;
+		margin-right: 20px;
+	}
+	#header_a{
+		float: right;
+		width: 300px;
+		height: 30px;
+		border: 1px solid black;
+		line-height: 30px;
+	}
+	#header_a a{
+		color: black;
+		border: 1px solid black;
+		margin-left: 20px;
+	}
+		
+
+	#form{
+		width: 1050px;
+		height: 100px;
+		margin: 0 auto;
+		border: 1px solid black;
+	}
+	main{
+		margin: 0 auto;
+		width: 1050px;
+		height: 3000px;
+		border: 1px solid black;
+	}
+	#form{
+		position: relative;
+	}
+	#form img{
+		position: absolute;
+		top: 30px;
+		left: 100px;
+	}
+	#form form{
+		position: absolute;
+		width: 650px;
+		top: 30px;
+		left: 250px;
+		border: 1px solid black;
+	}
+	#search1{
+		width: 540px;
+		height: 40px;	
+	}
+	#search2{
+		border-style: none;
+		width: 100px;
+		height: 40px;
+		color: white;
+		background-color: #3388ff;
+	}
+	#form_a{
+		position: absolute;
+		top: 40px;
+		right: 0px;
+		height: 40px;
+		line-height: 40px;
+	}
+	#form_a a{
+		color: black;
+		font-size: 12px;
+		margin-right: 10px;
+	}
+	
+	#big_nav{
+		min-width: 1050px;
+		height: 40px;
+		/*border: 1px solid black;*/
+		background-color: #01204f;
+	}
+	#big_nav nav{
+		width: 1050px;
+		margin: 0 auto;
+	}
+	#big_nav nav a{
+		/*border: 1px solid white;*/
+		color: white;
+		float: left;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 10px;
+		font-size: 14px;
+		text-decoration: none;
+	}
+	#big_nav nav a:hover{
+		background-color: #cc0000;
+	}
+	
+	#sec1{
+		margin-top: 10px;
+		border: 1px solid black;
+		width: 1050px;
+		height: 1150px;
+	}
+	#sec1_left{
+		/*border: 1px solid black;*/
+		width: 400px;
+		margin-right: 40px;
+		height: 1000px;
+		float: left;
+		position: relative;/*sec1_dl*/
+	}
+	#sec1_left_div1{
+		width: 400px;
+		height: 40px;
+		padding: 20px auto;
+		display: block;
+		border-bottom: 1px solid #e5e5e5;
+		position: relative;
+	}
+	#sec1_left_div1 p{
+		position: absolute;
+		
+		width: 120px;
+		height: 40px;
+		line-height: 40px;
+		list-style: none;
+		font-size: 18px;
+		text-align: center;
+		font-weight: 600;
+		color: #666666;
+	}
+	#sec1_left_div1 p:hover{
+		color: #2f63c9;
+	}
+	
+	#sec1_left_div1 p:first-child{
+		left: 0;
+		color: #2f63c9;
+		border-bottom: 2px solid #2f63c9;
+	}
+	#sec1_left_div1 p:last-child{
+		left: 120px;
+	}
+	#sec1_left_div1 p span {
+		/*position: absolute;*/
+		/*top: 10px;*/
+		/*margin-top: 10px;*/
+		/*display: block;*/
+		height: 20px;
+		padding:0 23px ;
+		border-right: 1px solid #e5e5e5;
+	}
+	#sec1_dl{
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 40px;
+		line-height: 40px;
+	}
+	#sec1_dl a{
+		text-decoration: none;
+		color: #344d72;
+	}
+	#sec1_dl a:hover{
+		color: #336699;
+	}
+	ul li{
+		list-style:none;
+	}
+	#sec1_left_ul1{
+		padding-left:20px;
+		/*padding-top: 10px;*/
+		padding-bottom: 20px;
+		border-bottom: 1px dotted black;
+	}
+	#sec1_left_ul1 a,#sec1_left_ul2 a{
+		color: #000000;
+		text-decoration: none;
+	}
+	#sec1_left_ul1 a:hover,#sec1_left_ul2 a:hover{
+		text-decoration: underline;
+	}
+	#sec1_left_ul1 li{
+		list-style: ;
+		font-size:18px;
+		margin-top: 12px;	
+	}
+	.sec1_left_ul2lis{
+		/*border: 1px solid black;*/
+		padding: 10px 0;
+	}
+	.sec1_left_ul2lis ul{
+		margin-top: 8px;
+	}
+	.sec1_left_ul2lis>a{
+		list-style: ;
+		font-size: 16px;
+		font-weight: 600;
+	}
+	#sec1_left_ul2 ul li{
+		line-height: 26px;
+		font-size: 14px;
+	}
+	#sec1_left_ul1 li:first-child{
+		font-weight: 600;
+	}
+	#sec1_left_ul1>a,#sec1_left_ul2>a{
+		font-size: 12px;
+		margin-right: 8px;
+	}
+	#sec1_left_ul2{
+		padding-left:20px;
+	}
+	
+	#sec1_right{
+		border: 1px solid black;
+		width: 560px;
+		height: 1111px;
+		float: left;
+		position: relative;
+	}
+	
+	#lunbo{
+		width: 560px;
+		height: 305px;
+		border: 1px solid black;
+		position: relative;
+	}
+	#lunbo div{
+		width: 560px;
+		height: 305px;
+		position: absolute;
+	}
+	#lunbo img{
+		width: 560px;
+		height: 305px;
+		float: left;
+	}
+	#lunbo p{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 30px;
+		color: white;
+		font-size: 16px;
+		font-weight: 600;
+		text-indent: 0.5em;
+		/*border: 1px solid black;*/
+		width: 420px;
+		box-shadow: 0 -4px 8px rgba(0,0,0,0.5);
+		background-color: rgba(0,0,0,0.5);
+	}
+	#hot{
+		/*border: 1px solid black;*/
+		width: 560px;
+		/*height: 235px;*/
+	}
+	#hot>p{
+		padding: 10px;
+		/*border: 1px solid black;*/
+	}
+	#hot>p>a{
+		font-weight: 600;
+		color: #2542a1 !important;
+		text-decoration: none;
+	}
+	#hot>p>span{
+		font-size: 10px;
+		color: #9999b2;
+	}
+	#hot div{
+		display: flex;
+		text-align: center;
+		height: 100px;
+		border: 2px solid white;
+		justify-content: space-around;
+		align-items: center;
+	}
+	#hot div a{
+		text-decoration: none;
+		color: white;
+	}
+	.box2x{
+		width: 200px;
+		font-size: 16px;
+	}
+	.box1x{
+		width: 100px;
+		font-size: 12px;
+	}
+	.deepblue{
+		background-color: #3064bb;
+	}
+	.lightblue{
+		background-color: #6d91cf;
+	}
+
+	#baijia{
+		width: 560px;
+	}
+	#baijia header{
+		/*widows: 600px;*/
+		height: 36px;
+	}
+	#bjtop>p{
+		padding: 10px;
+	}
+	#bjtop>p>a{
+		font-weight: 600;
+		color: #2542a1 !important;
+		text-decoration: none;
+	}
+	#bjtop>p>a:hover{
+		text-decoration: underline;
+	}
+	#bjtop>p>span{
+		font-size: 10px;
+		color: #9999b2;
+	}
+	#bjtop{
+		float: left;
+	}
+	#bjmore{
+		float: right;
+	}
+	#bjmore a{
+		text-decoration: none;
+		color: #ff4200;
+		font-size: 12px;
+		font-weight: 600;
+	}
+	#bjnav{
+		margin-top: 10px;
+	}
+	.bjnav_span{
+		float: left;
+		border: 1px solid black;
+		padding: 0 12px;
+		/*font-size: 12px;*/
+	}
+	.bjnav_span a{
+		font-size: 14px;
+		text-decoration: none;
+		color: #18448e;
+	}
+	.bjnav_span a:hover{
+		text-decoration: underline;
+	}
+	
+	#bj_sec1{
+		width: 560px;
+		height: 300px;
+		margin: 12px 0;
+		border: 1px solid black;
+	}
+	#bj_sec_left{
+		/*border: 1px solid red;*/
+		width: 240px;
+		height: 300px;
+		float: left;
+		position: relative;
+	}
+	#bj_sec_right{
+		/*border: 1px solid red;*/
+		width: 290px;
+		height: 300px;
+		float: right;
+		font-size: 14px;
+	}
+	#bj_sec_left_top{
+		width: 240px;
+		height: 160px;
+		/*border: 1px solid red;*/
+		position: relative;
+	}
+	#bj_sec_left_top img{
+		
+		width: 240px;
+		height: 160px;
+	}
+	#bj_sec_left_top p{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 24px;
+		line-height: 24px;
+		font-size: 12px;
+		background-color: rgba(0,0,0,0.6);
+	}
+	#bj_sec_left_top p:hover{
+		background-color: rgba(0,0,0,1);
+	}
+	#bj_sec_left_top a{
+		text-decoration: none;
+		color: white;
+	}
+	#bj_sec_left figure:nth-child(2){
+		width: 113px;
+		height: 120px;
+		/*border: 1px solid red;*/
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+	#bj_sec_left figure:last-child{
+		width: 113px;
+		height: 120px;
+		/*border: 1px solid red;*/
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	#bj_sec_left figure img{
+		width: 113px;
+		height: 84px;
+	}
+	#bj_sec_left figure figcaption{
+		margin-top: -5px;
+		font-size: 12px;
+		/*border: 1px solid red;*/
+		background-color: #f6f7f8;
+	}
+	#bj_sec_left figure a{
+		text-decoration: none;
+		color: #000000;
+	}
+	#bj_sec_left figure figcaption:hover{
+		background-color: #3064bb;
+		color: white;
+	}
+	#bj_sec_right ul:last-child{
+		border-top: 1px dotted black;
+		padding-top: 10px;
+	}
+	#bj_sec_right ul li{
+		height: 28px;
+	}
+	#bj_sec_right ul li:first-child{
+		font-weight: 600;
+	}
+	
+	#bj_sec2{
+		width: 240px;
+		border: 1px solid black;
+		position: absolute;/*244*/
+		bottom: 0;
+		left: 0;
+	}
+	/*百家聚焦*/
+	#bj_sec2_top>p{
+		padding: 10px;
+	}
+	#bj_sec2_top>p>a{
+		font-weight: 600;
+		color: #2542a1 !important;
+		text-decoration: none;
+	}
+	/*#bj_sec2_top>p>a:hover{
+		text-decoration: underline;
+	}*/
+	#bj_sec2_top>p>span{
+		font-size: 10px;
+		color: #9999b2;
+	}
+	/*百家聚焦图*/
+	#bj_sec_imgs{
+		width: 240px;
+		height: 160px;
+		/*border: 1px solid red;*/
+		position: relative;
+	}
+	#bj_sec_imgs img{
+		
+		width: 240px;
+		height: 160px;
+	}
+	#bj_sec_imgs p{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 24px;
+		line-height: 24px;
+		font-size: 12px;
+		background-color: rgba(0,0,0,0.6);
+	}
+	#bj_sec_imgs p:hover{
+		background-color: rgba(0,0,0,1);
+	}
+	#bj_sec_imgs a{
+		text-decoration: none;
+		color: white;
+	}
+	
+	/*热门文章*/
+	#bj_sec3{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		border: 1px solid darkgoldenrod;
+	}
+	#bj_sec3_top>p{
+		padding: 10px;
+	}
+	#bj_sec3_top>p>a{
+		font-weight: 600;
+		color: #2542a1 !important;
+		text-decoration: none;
+	}
+	/*#bj_sec3_top>p>a:hover{
+		text-decoration: underline;
+	}*/
+	#bj_sec3_top>p>span{
+		font-size: 10px;
+		color: #9999b2;
+	}
+	#bj_sec_rank{
+		height: 160px;
+		width: 290px;
+		border-top: 1px solid #ececec;
+	}
+	#bj_sec_rank ul{
+		/*border: 1px solid red;*/
+		padding-top: 5px;
+	}
+	#bj_sec_rank li{
+		text-indent: 2em;
+		font-size: 14px;
+		line-height: 30px;
+	}
+	#bj_sec_rank li a{
+		text-decoration: none;
+		color: #000000;
+	}
+	#bj_sec_rank li a:hover{
+		text-decoration: underline;
+	}
+	
+	#zhouri{
+		width: 96px;
+		height: 30px;
+		border-top: 1px solid #ececec;
+		border-left: 1px solid #ececec;
+		border-right: 1px solid #ececec;
+		position: absolute;
+		right: 0;
+		bottom: 160px;
+	}
+	#zhouri div{
+		text-align: center;
+		font-size: 14px;
+		float: left;
+		width: 47px;
+		height: 30px;
+		line-height: 30px;
+		/*border: 1px solid black;*/
+		color: #999999;
+	}
+	#ribang{
+		border-right: 1px solid #ececec;
+	}
+	#zhouri div:hover{
+		color: #000000;
+	}
+	
+	aside{
+		width: 48px;
+		height: 360px;
+		border: 1px solid blue;
+		position: fixed;
+		right: 20%;
+		bottom: 0;
+	}
+</style>-->
+<script type="text/javascript" src="js/bd.js"></script>
+	</head>
+	<body>
+		<header>
+			<div id="header_top">
+				<div id="header_a">
+					<a href="">百度首页</a>
+					<a href="">登陆</a>
+					<a href="">注册</a>
+					<a href="">百度新闻客户端</a>
+				</div>
+				<nav id="header_nav">
+					<a href="">网页</a>
+					<a href="">新闻</a>
+					<a href="">贴吧</a>
+					<a href="">知道</a>					
+					<a href="">音乐</a>
+					<a href="">图片</a>
+					<a href="">视频</a>
+					<a href="">地图</a>
+					<a href="">文库</a>
+				</nav>
+			</div>			
+			<div id="form">
+				<img src="img/百度logo.gif" alt="" />
+				<form action="" method="post">					
+					<input type="text" name="" value="" id="search1"/>
+					<input type="submit" value="百度一下"id="search2"/>
+					<input type="radio" name="search" id="" value="" />新闻全文
+					<input type="radio" name="search" id="" value="" />新闻标题
+				</form>
+				<div id="form_a">
+						<a href="" class="form_a">帮助</a>
+						<a href="" class="form_a">高级搜索</a>
+						<a href="" class="form_a">设置</a>	
+				</div>
+			</div>
+		</header>
+		<div id="big_nav">
+			<nav>
+				<a href="" style="background-color: #cc0000;" >百度首页</a>
+				<a href=""><span>百家号</span></a>
+				<a href="">国内</a>
+				<a href="">国际</a>
+				<a href="">军事</a>
+				<a href="">社会</a>
+				<a href="">财经</a>
+				<a href="">娱乐</a>
+				<a href="">体育</a>
+				<a href="">互联网</a>
+				<a href="">科技</a>
+				<a href="">游戏</a>
+				<a href="">时尚</a>
+				<a href="">女人</a>
+				<a href="">汽车</a>
+				<a href="">个性推荐</a>
+				<a href="">更多</a>
+			</nav>
+		</div>
+		<main>
+			<section id="sec1">
+				<div id="sec1_left">
+					<div id="sec1_left_div1">
+						<p><span>热点要闻</span></p>
+						<p>个性推荐</p>
+					</div>
+					<div id="sec1_dl">
+						<a href="">登陆更懂你</a>
+					</div>
+					<ul id="sec1_left_ul1">
+						<li><a href="">习近平在这里提出“绿水青山就是金山银山”</a></li>
+						<a href="">习近平厚植绿水青山 描绘美丽中国新画卷</a><a href="">出访专题</a><a href="">砥砺奋进</a>
+						<li><a href="">【来之不易的绿水青山】我国生态文明成果扩大</a></li>
+						<a href="">中德两国总理的吃饭时间</a><a href="">总理讲话赢得6次掌声</a><a href="">中国铁路联通世界</a>
+						<li><a href="">31名被赞比亚关押中国公民获释遇阻</a></li>
+						<a href="">中国驻赞大使再次就赞比亚扣押31名中国公民提交涉</a>
+					</ul>
+					<ul id="sec1_left_ul2">
+						<li class="sec1_left_ul2lis"><a href="">多地发布2017年企业工资指导线 你工资能涨多少？</a>
+							<ul>
+								<li><a href="">卡塔尔突遭多国同时“拉黑” 股市暴跌海陆空通道关闭</a></li>
+								<li><a href="">微电影：震撼全国！他们用双手凿出千里“天河”</a></li>
+								<li><a href="">高考辅导班考前3天仍可报班 2个月冲刺账单超10万</a></li>
+								<li><a href="">房产中介：以前月薪三四万 现在工资负数还倒贴钱</a></li>
+								<li><a href="">两男子专门"碰瓷"变道车辆 一年制造27次交通事故</a></li>
+							</ul>
+						</li>
+						<li class="sec1_left_ul2lis"><a href="">媒体评"女博士大闹机场"：不应被继续污名化和加惩</a>
+							<ul>
+								<li><a href="">英国大选8日如期举行 首相：不能让恐袭打断民主进程</a></li>
+								<li><a href="">20余省公务员省考笔试放榜 有作弊者被记诚信档案</a></li>
+								<li><a href="">13个集团军组建满月 已亮相军长个个来头不小</a></li>
+								<li><a href="">网红店雇专人前门买后门还 排队超50人必有黄牛</a></li>
+								<li><a href="">1978年高考考什么？ 数学只考17.5分仍上了大学</a></li>
+							</ul>
+						</li>
+						<li class="sec1_left_ul2lis"><a href="">2016中国环境公报：254个城市环境空气质量超标</a>
+							<ul>
+								<li><a href="">40年高考作文题全在这儿！你高考那年的题目是啥</a></li>
+								<li><a href="">哈工大学生痴迷数学成低保户 称追求事业就会有牺牲</a></li>
+								<li><a href="">韩国查明“瞒报4辆萨德发射车秘密入境”</a></li>
+								<li><a href="">35岁男子在书店性骚扰13岁女孩 当其面放淫秽视频</a></li>
+								<li><a href="">起底辣条产业：问题辣条河南湖南最多 利润高达50%</a></li>
+							</ul>
+						</li>
+						<li class="sec1_left_ul2lis"><a href="">广东揭阳市委原书记陈弘平受贿近1.4亿一审被判死缓</a>
+							<ul>
+								<li><a href="">苹果开发者大会五亮点：最大惊喜来自智能音箱</a></li>
+								<li><a href="">90后小伙接管家族企业财务 侵占2200万元打网游</a></li>
+								<li><a href="">女白领接触泰迪犬从不洗手 眼睛取出2厘米活虫</a></li>
+								<li><a href="">两部级老虎被纪委通报 1位还与周永康之子做交易</a></li>
+								<li><a href="">合肥小区楼下绿化带频繁爆响 具体原因仍在调查</a></li>
+							</ul>
+						</li>
+						<li class="sec1_left_ul2lis"><a href="">断交潮下的卡塔尔：民众抢购囤货买空超市</a>
+							<ul>
+								<li><a href="">假"大校"穿网购军装出门旅游 被警察逮个正着</a></li>
+								<li><a href="">高速噪音吓死"鸡宝宝" 养鸡场诉至法院获赔40多万</a></li>
+								<li><a href="">江苏：疑因儿子赌博欠高利贷 夫妻服药自杀</a></li>
+								<li><a href="">吴敦义：蔡英文曾承认“九二共识” 不懂她为何会忘</a></li>
+								<li><a href="">徐玉玉案延期开庭 徐父：最痛恨黑客 还欠亲戚28万元</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div id="sec1_right">
+					<div id="lunbo">
+						<div style="display: block;">
+							<img src="img/金山.jpg"/>
+							<p>绿水青山就是金山银山</p>
+						</div>
+						<div>
+							<img src="img/西瓜.jpg"/>
+							<p>江苏"拇指西瓜"上市 内瓤为青绿色</p>
+						</div>
+						<div>
+							<img src="img/美国.jpg"/>
+							<p>美国男子发动“臭虫攻击” 致市政部门瘫痪</p>
+						</div>
+						<div>
+							<img src="img/陆战队.jpg"/>
+							<p>为了世界杯预选赛 英格兰队赴海军陆战队军训</p>
+						</div>
+						<div>
+							<img src="img/心脏.jpg"/>
+							<p>一人两心 印度男子接受亚洲首例异位心脏移植手术</p>
+						</div>
+						<div>
+							<img src="img/高考.jpg"/>
+							<p>考场作弊工具如间谍装备 高考全天候无线电扫描</p>
+						</div>
+						<div>
+							<img src="img/教练.jpg"/>
+							<p>好好练！狗狗当免费私教帮主人做俯卧撑走红</p>
+						</div>
+						<div>
+							<img src="img/捕鱼.jpg"/>
+							<p>浙江“巨网捕鱼”万鱼跃起</p>
+						</div>
+						<ul>
+							<li style="background-color: #4372c1;"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						<a href="#" id="aleft"><</a>
+						<a href="#" id="aright">></a>
+					</div>
+					<div id="hot">
+						<p><a href="">热搜新闻词</a><span> HOT WORDS</span></p>
+						<div>
+							<div class="box2x deepblue" ><a href="">习近平将访哈萨克斯
+坦并出席系列活动</a></div>
+							<div class="box2x lightblue"><a href="">习近平在这里提出“绿水青山就是金山银山”</a></div>
+							<div class="box1x deepblue"><a href="">多地发布2017年企业工资指导线</a></div>
+							<div class="box1x deepblue"><a href="">卡塔尔突遭多国同时“拉黑</a></div>
+						</div>
+						<div>
+							<div class="box1x  lightblue"><a href="">英国大选8日如期举行</a></div>
+							<div class="box1x  deepblue"><a href="">20余省公务员省考笔试放榜</a></div>
+							<div class="box1x  lightblue"><a href="">13个集团军组建满月</a></div>
+							<div class="box1x  deepblue"><a href="">北京有银行首贷利率上浮1成</a></div>
+							<div class="box1x  deepblue"><a href="">苹果开发者大会五亮点</a></div>
+							<div class="box1x  lightblue"><a href="">两部级老虎被纪委通报</a></div>
+						</div>
+					</div>
+					<div id="baijia">
+						<header>
+							<div id="bjtop">
+								<p><a href="">百家号</a><span> BAIJIA</span></p>
+							</div>
+							<nav id="bjnav">
+								<span class="bjnav_span"><a href="">财经</a></span>
+								<span class="bjnav_span"><a href="">文化</a></span>
+								<span class="bjnav_span"><a href="">娱乐</a></span>
+								<span class="bjnav_span"><a href="">体育</a></span>
+							</nav>
+							<div id="bjmore">
+								<a href="">加入百家号</a>
+							</div>	
+						</header>
+						<section id="bj_sec1">
+							<div id="bj_sec_left">
+								<div id="bj_sec_left_top">
+									<img src="img/乐视.jpg" alt="" />
+									<p><a href="">乐视北美大溃败：“国王”贾跃亭消失</a></p>
+								</div>
+								<figure>
+									<img src="img/欢乐颂.jpg" alt="" />
+									<a href=""><figcaption>《欢乐颂2》送审样片再遭泄露</figcaption></a>
+								</figure>
+								<figure>
+									<img src="img/iphone.png" alt="" />
+									<a href=""><figcaption>IPhone8能否拯救苹果的大中华区市场?</figcaption></a>
+								</figure>
+							</div>
+							<div id="bj_sec_right">
+								<ul>
+									<li>那场有关命运和梦想的竞赛，听听这12位的高</li>
+									<li>刘军：离开联想的两年，颠覆了所有的认知</li>
+									<li>WWDC观察：是什么逼迫苹果走向开放的？</li>
+									<li>特朗普任性“退群” 背后是第三次暴怒的硅谷</li>
+									<li>谁能笑到最后：智能音箱务实派与技术流的博</li>
+								</ul>
+								<ul>
+									<li>一文说清新零售到底有哪些商业模式</li>
+									<li>复盘联想：杨元庆遗失传统</li>
+									<li>徐戈：玩互联网懂了亚文化圈的，都在闷声发</li>
+									<li>放开二孩政策的千亿玩具大市场，为何大玩家</li>
+									<li>辟谷才是当代年轻人遁入虚无的最新选择</li>
+								</ul>
+							</div>
+						</section>
+						<section id="bj_sec2">
+							<div id="bj_sec2_top">
+								<p><a href="">百家聚焦</a><span> BAIJIA FOCUS</span></p>
+							</div>
+							<div id="bj_sec_imgs">
+								<img src="img/顺丰.jpg" alt="" />
+								<p><a href="">​顺丰菜鸟恢复合作也是貌合神离</a></p>
+							</div>
+						</section>
+						<section id="bj_sec3">
+							<div id="bj_sec3_top">
+								<p><a href="">热门文章</a><span> BAIJIA HOT</span></p>
+							</div>
+							<div id="zhouri">
+								<a href=""><div id="ribang">日榜</div></a>
+								<a href=""><div>周榜</div></a>
+							</div>
+							<div id="bj_sec_rank">
+								<ul>
+									<li><a href="">苹果iOS 11针对中国推特</a></li>
+									<li><a href="">《欢乐颂2》送审样片再遭泄露</a></li>
+									<li><a href="">前所未有！苹果一口气发布4大</a></li>
+									<li><a href="">IPhone8能否拯救苹果的</a></li>
+									<li><a href="">苹果开发者大会WWDC 20</a></li>
+								</ul>
+							</div>
+						</section>
+					</div>					
+				</div>	
+			</section>
+			
+			
+		</main>
+		<aside>			
+		</aside>	
+	</body>
+</html>
